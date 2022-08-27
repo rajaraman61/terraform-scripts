@@ -17,12 +17,3 @@ provider "azurerm" {
   tenant_id = "6153b997-d899-4371-8cc6-65e35ca3b372"
   features {}
 }
-
-resource "azurerm_resource_group" "azure_learning_grp" {
-    name = var.resource_group
-    location = var.region
-}
-
-
-
-
