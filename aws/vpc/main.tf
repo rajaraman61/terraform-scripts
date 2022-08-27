@@ -50,7 +50,6 @@ resource "aws_route_table_association" "subnet_rt_association_two" {
     subnet_id = aws_subnet.subnet_two.id
 }
 
-
 resource "aws_vpc_endpoint" "gw_endpoint" {
     vpc_endpoint_type = "Gateway"
     vpc_id = aws_vpc.vpc_end_point.id
