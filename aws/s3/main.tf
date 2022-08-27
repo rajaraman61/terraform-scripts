@@ -3,6 +3,6 @@ resource "aws_s3_bucket" "awsbuck1" {
 
   tags = {
     Name        = "storage bucket"
-    Environment = "Develop"
+    Environment = var.environment
   }
 }
