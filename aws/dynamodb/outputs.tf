@@ -1,4 +1,9 @@
-output "Dynamodb_arn" {
-  value       = resource.aws_dynamodb_table.aws_learning_table.arn
-  description = "Dynamodb ARN"
+output "environment_table_name" {
+  description = "Name of the environment DynamoDB table"
+  value       = aws_dynamodb_table.environment.name
+}
+
+output "environment_table_arn" {
+  description = "ARN of the environment DynamoDB table"
+  value       = aws_dynamodb_table.environment.arn
 }
