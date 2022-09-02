@@ -1,8 +1,7 @@
-variable "Environment" {
+variable "environment" {
     description = "This is the cloud hosting region where your app will be deployed."
-    default = "develop"
 }
-
-variable "bucketMedia" {
-  default = "fb-vpc-media-bucket" # USE A UNIQUE BUCKET NAME
+variable "bucket_names" {
+    description = "This is the cloud hosting region where your app will be deployed."
+    type = list
 }
